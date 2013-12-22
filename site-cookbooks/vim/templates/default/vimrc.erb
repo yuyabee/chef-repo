@@ -1,0 +1,26 @@
+syntax on
+filetype on
+filetype indent on
+filetype plugin on
+
+syntax on
+set number
+set t_Co=256
+set autoread
+set autoindent
+set backspace=indent,eol,start
+set smartindent
+set tabstop=2
+set shiftwidth=2
+set expandtab
+set list
+set listchars=eol:¬,tab:▸\ 
+set textwidth=80
+set cursorline
+if exists('&colorcolumn')
+  set colorcolumn=+1
+endif
+
+inoremap <silent> <C-j> <esc>
+inoremap <ESC><ESC> :nohlsearch<CR><ESC>
+noremap ; :
