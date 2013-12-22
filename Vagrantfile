@@ -15,7 +15,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   #
   config.vm.provision :chef_solo do |chef|
     chef.cookbooks_path = ["./site-cookbooks", "./cookbooks"]
-		chef.run_list = ["yum::epel", "rpmforge", "rbenv::system", "ruby_build", "ruby", "sbcl", "vim"]
+		chef.run_list = ["yum::epel", "rpmforge", "rbenv::system", "ruby_build", "ruby", "golang", "sbcl", "vim", "zsh"]
 		chef.json = {
 			"rpmforge" => {
 				"rpm_url" => "http://pkgs.repoforge.org/rpmforge-release/rpmforge-release-0.5.3-1.el6.rf.x86_64.rpm"
