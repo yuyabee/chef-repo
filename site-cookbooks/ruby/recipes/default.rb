@@ -8,6 +8,7 @@
 #
 
 include_recipe 'rbenv::system'
+include_recipe 'ruby_build'
 
 node["ruby"]["versions"].each do |version|
   rbenv_ruby    version

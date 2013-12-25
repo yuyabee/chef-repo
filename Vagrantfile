@@ -15,7 +15,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 	# path, and data_bags path (all relative to this Vagrantfile), and adding
 	# some recipes and/or roles.
 
-	cookbooks = ["iptables", "yum::epel", "rpmforge", "ruby_build", "rbenv", "ruby", "golang", "sbcl", "vim", "zsh"]
+	cookbooks = ["iptables", "yum::epel", "rpmforge", "ruby", "golang", "sbcl", "vim", "zsh"]
 	config.vm.provision :chef_solo do |chef|
 		chef.cookbooks_path = ["./site-cookbooks", "./cookbooks"]
 		chef.run_list = cookbooks

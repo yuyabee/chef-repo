@@ -1,5 +1,5 @@
 /cookbooks/
 
 /vendor/bundle
-.vagrant/
-.bundle/
+/.vagrant/
+/.bundle/
