@@ -7,6 +7,8 @@
 # All rights reserved - Do Not Redistribute
 #
 
+include_recipe 'yum::epel'
+
 package "sbcl" do
 	action :install
 end
