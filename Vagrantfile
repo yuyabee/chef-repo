@@ -11,10 +11,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
 	config.vm.network :private_network, ip: "192.168.33.20"
 
-	# Enable provisioning with chef solo, specifying a cookbooks path, roles
-	# path, and data_bags path (all relative to this Vagrantfile), and adding
-	# some recipes and/or roles.
-
 	cookbooks = [
 		"iptables",
 		"ruby",
