@@ -36,6 +36,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 	end
 
 	config.vm.provision :serverspec do |spec|
-		spec.pattern = 'spec/*_spec.rb'
+		spec.pattern = 'spec/base/*_spec.rb'
 	end
 end
