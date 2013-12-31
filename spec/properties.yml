@@ -4,3 +4,5 @@ vagrant:
   :main_user_name: vagrant
   :ruby:
     :version: 2.0.0-p353
+  :nodejs:
+    :version: v0.10.24
