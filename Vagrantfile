@@ -18,7 +18,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 		"nodejs",
 		"sbcl",
 		"vim",
-		"zsh"
+		"zsh",
+		"postgre"
 	]
 
 	config.vm.provision :chef_solo do |chef|
@@ -31,11 +32,16 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 			"main_user" => "vagrant",
 			"main_group" => "vagrant",
 			"ruby" => {
-				"versions" => ["2.0.0-p353"]
+				"versions" => ["2.1.1"]
 			},
 			"nodejs" => {
 				"versions" => ["v0.10.24"],
 				"default_version" => "v0.10.24"
+			},
+			"postgresql" => {
+				"password" => {
+					"postgres" => "postgres"
+				}
 			}
 		}
 	end

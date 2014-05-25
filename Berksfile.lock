@@ -6,10 +6,22 @@
     "ruby_build": {
       "locked_version": "0.8.0"
     },
+    "postgresql": {
+      "locked_version": "3.0.2"
+    },
     "rbenv": {
       "locked_version": "0.7.3",
       "git": "git://github.com/fnichol/chef-rbenv.git",
       "ref": "9afb4e5da2e6212504a12de3bbbd410cd96100f6"
+    },
+    "apt": {
+      "locked_version": "2.0.0"
+    },
+    "build-essential": {
+      "locked_version": "1.4.0"
+    },
+    "openssl": {
+      "locked_version": "1.0.2"
     },
     "java": {
       "locked_version": "1.11.6"
