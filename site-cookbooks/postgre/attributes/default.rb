@@ -16,11 +16,20 @@ default['postgresql']['config']['ident_file']               = "/var/lib/pgsql/#{
 default['postgresql']['config']['unix_socket_directories']    = nil
 default['postgresql']['config']['listen_addresses'] = "*"
 
-default['postgresql']['pg_hba'] = [{:comment => nil,
-                                    :type => 'local',
-                                    :db => 'all',
-                                    :user => 'all',
-                                    :method => 'md5'}] 
+default['postgresql']['pg_hba'] = [{
+  :comment => nil,
+  :type => 'local',
+  :db => 'all',
+  :user => 'all',
+  :method => 'md5'
+}, {
+  :comment => nil,
+  :type => 'host',
+  :db => 'all',
+  :addr => '0.0.0.0/0',
+  :user => 'all',
+  :method => 'md5'
+}] 
 
 default['postgresql']['initdb_locale'] = 'en_US.UTF-8'
 
